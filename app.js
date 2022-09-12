@@ -20,6 +20,20 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
+//another solution using a nested conditional (I like my first one better just because it looks a little cleaner and uses fewer lines of code)
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+        if (i % 3 === 0) {
+            console.log(`${i}: FIZZBUZZ`);
+        } else {
+            console.log(`${i}: BUZZ`);
+        }
+    } else if (i % 3 === 0) {
+        console.log(`${i}: FIZZ`);
+    }
+}
+
 //Exercise 3
 let j = 1;
 while (j <= 100) {
