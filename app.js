@@ -34,6 +34,21 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
+//another solution with only two conditionals
+
+let phrase;
+
+for (let i = 1; i <= 100; i++) {
+    phrase = "";
+    if (i % 3 === 0) {
+        phrase = "FIZZ";
+    }
+    if (i % 5 === 0) {
+        phrase += "BUZZ";
+    }
+    console.log(`${i}: ${phrase}`);
+}
+
 //Exercise 3
 let j = 1;
 while (j <= 100) {
@@ -114,3 +129,4 @@ for (let i = start; i <= n; i++) {
         console.log(`${i}: FIZZ`);
     }
 }
+
