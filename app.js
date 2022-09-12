@@ -41,7 +41,7 @@ let phrase;
 for (let i = 1; i <= 100; i++) {
     phrase = "";
     if (i % 3 === 0) {
-        phrase = "FIZZ";
+        phrase += "FIZZ";
     }
     if (i % 5 === 0) {
         phrase += "BUZZ";
